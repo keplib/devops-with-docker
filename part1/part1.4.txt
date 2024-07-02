@@ -1,0 +1,184 @@
+Script started on Tue Jul  2 18:28:52 2024
+Node.js version v21.7.1 detected.
+Odd numbered Node.js versions will not enter LTS status and should not be used for production. For more information, please see https://nodejs.org/en/about/releases/.
+[1m[7m%[27m[1m[0m                                                                                                                                                             ]2;balazskepli@Balazss-MacBook-Pro-2:~/Desktop/devops-docker]1;..devops-docker[0m[27m[24m[J[01;32m➜  [36mdevops-docker[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker run -it ubuntu[?1l>[?2004l
+]2;docker run -it ubuntu]1;dockerUnable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2Keed1663d2238: Pulling fs layer [1B[1A[2Keed1663d2238: Downloading [>                                                  ]  293.2kB/28.84MB[1B[1A[2Keed1663d2238: Downloading [==>                                                ]  1.174MB/28.84MB[1B[1A[2Keed1663d2238: Downloading [====>                                              ]  2.345MB/28.84MB[1B[1A[2Keed1663d2238: Downloading [=======>                                           ]  4.123MB/28.84MB[1B[1A[2Keed1663d2238: Downloading [=========>                                         ]  5.602MB/28.84MB[1B[1A[2Keed1663d2238: Downloading [============>                                      ]  7.068MB/28.84MB[1B[1A[2Keed1663d2238: Downloading [==============>                                    ]  8.256MB/28.84MB[1B[1A[2Keed1663d2238: Downloading [=================>                                 ]  10.04MB/28.84MB[1B[1A[2Keed1663d2238: Downloading [====================>                              ]  11.82MB/28.84MB[1B[1A[2Keed1663d2238: Downloading [=======================>                           ]  13.29MB/28.84MB[1B[1A[2Keed1663d2238: Downloading [=========================>                         ]  14.48MB/28.84MB[1B[1A[2Keed1663d2238: Downloading [===========================>                       ]  15.66MB/28.84MB[1B[1A[2Keed1663d2238: Downloading [=============================>                     ]  16.84MB/28.84MB[1B[1A[2Keed1663d2238: Downloading [===============================>                   ]  18.32MB/28.84MB[1B[1A[2Keed1663d2238: Downloading [==================================>                ]  19.78MB/28.84MB[1B[1A[2Keed1663d2238: Downloading [====================================>              ]  20.96MB/28.84MB[1B[1A[2Keed1663d2238: Downloading [=======================================>           ]  22.74MB/28.84MB[1B[1A[2Keed1663d2238: Downloading [=========================================>         ]  24.21MB/28.84MB[1B[1A[2Keed1663d2238: Downloading [============================================>      ]  25.68MB/28.84MB[1B[1A[2Keed1663d2238: Downloading [===============================================>   ]  27.16MB/28.84MB[1B[1A[2Keed1663d2238: Verifying Checksum [1B[1A[2Keed1663d2238: Download complete [1B[1A[2Keed1663d2238: Extracting [>                                                  ]  294.9kB/28.84MB[1B[1A[2Keed1663d2238: Extracting [=======>                                           ]  4.424MB/28.84MB[1B[1A[2Keed1663d2238: Extracting [=============>                                     ]  7.963MB/28.84MB[1B[1A[2Keed1663d2238: Extracting [====================>                              ]  12.09MB/28.84MB[1B[1A[2Keed1663d2238: Extracting [====================================>              ]  20.94MB/28.84MB[1B[1A[2Keed1663d2238: Extracting [=========================================>         ]  24.18MB/28.84MB[1B[1A[2Keed1663d2238: Extracting [==============================================>    ]  26.54MB/28.84MB[1B[1A[2Keed1663d2238: Extracting [=================================================> ]  28.61MB/28.84MB[1B[1A[2Keed1663d2238: Extracting [==================================================>]  28.84MB/28.84MB[1B[1A[2Keed1663d2238: Pull complete [1BDigest: sha256:2e863c44b718727c860746568e1d54afd13b2fa71b160f5cd9058fc436217b30
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@5437b26075c5: /root@5437b26075c5:/# apt-get update
+[?2004l0% [Working]            Get:1 http://ports.ubuntu.com/ubuntu-ports noble InRelease [256 kB]
+0% [1 InRelease 13.8 kB/256 kB 5%]                                  0% [Working]0% [Waiting for headers]                        Get:2 http://ports.ubuntu.com/ubuntu-ports noble-updates InRelease [126 kB]
+0% [2 InRelease 13.8 kB/126 kB 11%]                                   0% [Working]0% [Waiting for headers]                        Get:3 http://ports.ubuntu.com/ubuntu-ports noble-backports InRelease [126 kB]
+0% [3 InRelease 2587 B/126 kB 2%]                                 0% [Working]0% [Waiting for headers]                        Get:4 http://ports.ubuntu.com/ubuntu-ports noble-security InRelease [126 kB]
+0% [4 InRelease 9577 B/126 kB 8%]                                 0% [Working]15% [Waiting for headers]                         Get:5 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 Packages [1776 kB]
+15% [5 Packages 2585 B/1776 kB 0%]17% [5 Packages 644 kB/1776 kB 36%]20% [5 Packages 1381 kB/1776 kB 78%]                                    21% [Working]             Get:6 http://ports.ubuntu.com/ubuntu-ports noble/restricted arm64 Packages [113 kB]
+21% [6 Packages 45.1 kB/113 kB 40%]21% [5 Packages store 0 B] [6 Packages 45.1 kB/113 kB 40%]                                                          22% [5 Packages store 0 B] [Waiting for headers]                                                Get:7 http://ports.ubuntu.com/ubuntu-ports noble/multiverse arm64 Packages [274 kB]
+22% [5 Packages store 0 B] [7 Packages 4255 B/274 kB 2%]                                                        22% [7 Packages 13.8 kB/274 kB 5%]22% [6 Packages store 0 B] [7 Packages 13.8 kB/274 kB 5%]                                                         23% [7 Packages 37.5 kB/274 kB 14%]                                   24% [Waiting for headers]                         Get:8 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 Packages [19.0 MB]
+24% [8 Packages 1484 B/19.0 MB 0%]24% [7 Packages store 0 B] [8 Packages 1484 B/19.0 MB 0%]                                                         24% [8 Packages 8192 B/19.0 MB 0%]27% [8 Packages 742 kB/19.0 MB 4%]29% [8 Packages 1452 kB/19.0 MB 8%]32% [8 Packages 2086 kB/19.0 MB 11%]34% [8 Packages 2751 kB/19.0 MB 14%]36% [8 Packages 3471 kB/19.0 MB 18%]39% [8 Packages 4241 kB/19.0 MB 22%]41% [8 Packages 4925 kB/19.0 MB 26%]                                                                                                           1247 kB/s 12s44% [8 Packages 5607 kB/19.0 MB 29%]                                                                                                           1247 kB/s 11s46% [8 Packages 6302 kB/19.0 MB 33%]                                                                                                           1247 kB/s 11s48% [8 Packages 6920 kB/19.0 MB 36%]                                                                                                           1247 kB/s 10s50% [8 Packages 7469 kB/19.0 MB 39%]                                                                                                           1247 kB/s 10s53% [8 Packages 8142 kB/19.0 MB 43%]                                                                                                            1247 kB/s 9s55% [8 Packages 8848 kB/19.0 MB 47%]                                                                                                            1247 kB/s 9s57% [8 Packages 9488 kB/19.0 MB 50%]                                                                                                            1247 kB/s 8s60% [8 Packages 10.2 MB/19.0 MB 54%]                                                                                                            1247 kB/s 7s61% [8 Packages 10.6 MB/19.0 MB 56%]                                                                                                            1247 kB/s 7s63% [8 Packages 11.2 MB/19.0 MB 59%]                                                                                                            1247 kB/s 7s65% [8 Packages 11.7 MB/19.0 MB 62%]                                                                                                            1247 kB/s 6s68% [8 Packages 12.4 MB/19.0 MB 65%]                                                                                                            1242 kB/s 6s70% [8 Packages 13.2 MB/19.0 MB 69%]                                                                                                            1242 kB/s 5s73% [8 Packages 13.9 MB/19.0 MB 73%]                                                                                                            1242 kB/s 4s75% [8 Packages 14.6 MB/19.0 MB 77%]                                                                                                            1242 kB/s 4s77% [8 Packages 15.2 MB/19.0 MB 80%]                                                                                                            1242 kB/s 3s79% [8 Packages 15.8 MB/19.0 MB 83%]                                                                                                            1242 kB/s 3s82% [8 Packages 16.6 MB/19.0 MB 87%]                                                                                                            1242 kB/s 2s85% [8 Packages 17.3 MB/19.0 MB 91%]                                                                                                            1242 kB/s 2s87% [8 Packages 18.0 MB/19.0 MB 95%]                                                                                                            1242 kB/s 1s90% [8 Packages 18.7 MB/19.0 MB 98%]                                                                                                            1242 kB/s 1s                                                                                                                                                            Get:9 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 Packages [260 kB]
+91% [9 Packages 12.3 kB/260 kB 5%]                                                                                                              1242 kB/s 0s91% [8 Packages store 0 B] [9 Packages 28.7 kB/260 kB 11%]                                                                                      1242 kB/s 0s92% [8 Packages store 0 B] [Waiting for headers]                                                                                                1242 kB/s 0s                                                                                                                                                            Get:10 http://ports.ubuntu.com/ubuntu-ports noble-updates/multiverse arm64 Packages [12.2 kB]
+92% [8 Packages store 0 B] [10 Packages 12.2 kB/12.2 kB 100%]                                                                                   1242 kB/s 0s92% [8 Packages store 0 B] [Waiting for headers]                                                                                                1242 kB/s 0s                                                                                                                                                            Get:11 http://ports.ubuntu.com/ubuntu-ports noble-updates/universe arm64 Packages [129 kB]
+92% [8 Packages store 0 B] [11 Packages 20.2 kB/129 kB 16%]                                                                                     1242 kB/s 0s92% [8 Packages store 0 B]                                                                                                                      1242 kB/s 0s                                                                                                                                                            Get:12 http://ports.ubuntu.com/ubuntu-ports noble-updates/restricted arm64 Packages [165 kB]
+92% [8 Packages store 0 B] [12 Packages 1189 B/165 kB 1%]                                                                                       1242 kB/s 0s93% [12 Packages 41.7 kB/165 kB 25%]                                                                                                            1242 kB/s 0s93% [9 Packages store 0 B] [12 Packages 41.7 kB/165 kB 25%]                                                                                     1242 kB/s 0s93% [12 Packages 41.7 kB/165 kB 25%]                                                                                                            1242 kB/s 0s93% [10 Packages store 0 B] [12 Packages 41.7 kB/165 kB 25%]                                                                                    1242 kB/s 0s94% [12 Packages 41.7 kB/165 kB 25%]                                                                                                            1242 kB/s 0s94% [11 Packages store 0 B] [12 Packages 41.7 kB/165 kB 25%]                                                                                    1242 kB/s 0s95% [12 Packages 41.7 kB/165 kB 25%]                                                                                                            1242 kB/s 0s95% [Working]                                                                                                                                   1242 kB/s 0s95% [12 Packages store 0 B] [Waiting for headers]                                                                                               1242 kB/s 0s96% [Waiting for headers]                                                                                                                       1242 kB/s 0s                                                                                                                                                            Get:13 http://ports.ubuntu.com/ubuntu-ports noble-backports/universe arm64 Packages [9723 B]
+96% [13 Packages 1192 B/9723 B 12%]                                                                                                             1242 kB/s 0s96% [Working]                                                                                                                                   1242 kB/s 0s                                                                                                                                                            Get:14 http://ports.ubuntu.com/ubuntu-ports noble-security/restricted arm64 Packages [165 kB]
+96% [14 Packages 15.0 kB/165 kB 9%]                                                                                                             1242 kB/s 0s96% [13 Packages store 0 B] [14 Packages 15.0 kB/165 kB 9%]                                                                                     1242 kB/s 0s96% [14 Packages 22.0 kB/165 kB 13%]                                                                                                            1242 kB/s 0s97% [Waiting for headers]                                                                                                                       1242 kB/s 0s                                                                                                                                                            Get:15 http://ports.ubuntu.com/ubuntu-ports noble-security/universe arm64 Packages [67.5 kB]
+97% [15 Packages 5423 B/67.5 kB 8%]                                                                                                             1242 kB/s 0s97% [14 Packages store 0 B] [15 Packages 5423 B/67.5 kB 8%]                                                                                     1242 kB/s 0s97% [15 Packages 28.7 kB/67.5 kB 42%]                                                                                                           1242 kB/s 0s97% [Waiting for headers]                                                                                                                       1242 kB/s 0s                                                                                                                                                            Get:16 http://ports.ubuntu.com/ubuntu-ports noble-security/multiverse arm64 Packages [12.2 kB]
+98% [16 Packages 2928 B/12.2 kB 24%]                                                                                                            1242 kB/s 0s98% [15 Packages store 0 B] [16 Packages 8192 B/12.2 kB 67%]                                                                                    1242 kB/s 0s                                                                                                                                                            Get:17 http://ports.ubuntu.com/ubuntu-ports noble-security/main arm64 Packages [226 kB]
+98% [15 Packages store 0 B] [17 Packages 12.3 kB/226 kB 5%]                                                                                     1242 kB/s 0s98% [17 Packages 12.3 kB/226 kB 5%]                                                                                                             1242 kB/s 0s98% [16 Packages store 19.2 kB] [17 Packages 12.3 kB/226 kB 5%]                                                                                 1242 kB/s 0s99% [17 Packages 12.3 kB/226 kB 5%]                                                                                                             1242 kB/s 0s99% [Working]                                                                                                                                   1242 kB/s 0s99% [17 Packages store 0 B]                                                                                                                     1242 kB/s 0s100% [Working]                                                                                                                                  1242 kB/s 0s                                                                                                                                                            Fetched 22.9 MB in 18s (1254 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 8%Reading package lists... 92%Reading package lists... 92%Reading package lists... 93%Reading package lists... 93%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+[?2004h]0;root@5437b26075c5: /root@5437b26075c5:/# apt-get -y install curl
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 8%Reading package lists... 92%Reading package lists... 92%Reading package lists... 93%Reading package lists... 93%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 98%Reading state information... Done
+The following additional packages will be installed:
+  ca-certificates krb5-locales libbrotli1 libcurl4t64 libgssapi-krb5-2 libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libldap-common libldap2
+  libnghttp2-14 libpsl5t64 librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libssh-4 openssl publicsuffix
+Suggested packages:
+  krb5-doc krb5-user libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp libsasl2-modules-sql
+The following NEW packages will be installed:
+  ca-certificates curl krb5-locales libbrotli1 libcurl4t64 libgssapi-krb5-2 libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libldap-common libldap2
+  libnghttp2-14 libpsl5t64 librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libssh-4 openssl publicsuffix
+0 upgraded, 21 newly installed, 0 to remove and 0 not upgraded.
+Need to get 3550 kB of archives.
+After this operation, 9885 kB of additional disk space will be used.
+0% [Working]0% [Connecting to ports.ubuntu.com]0% [Connecting to ports.ubuntu.com]0% [Connecting to ports.ubuntu.com]0% [Connecting to ports.ubuntu.com]                                   Get:1 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 openssl arm64 3.0.13-0ubuntu3.1 [985 kB]
+                                   0% [1 openssl 10.9 kB/985 kB 1%]20% [1 openssl 893 kB/985 kB 91%]                                 23% [Working]             Get:2 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 ca-certificates all 20240203 [159 kB]
+23% [2 ca-certificates 1145 B/159 kB 1%]                                        28% [Waiting for headers]                         Get:3 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 krb5-locales all 1.20.1-6ubuntu2 [13.8 kB]
+28% [3 krb5-locales 13.8 kB/13.8 kB 100%]                                         29% [Working]             Get:4 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libkrb5support0 arm64 1.20.1-6ubuntu2 [33.9 kB]
+29% [4 libkrb5support0 9175 B/33.9 kB 27%]                                          31% [Waiting for headers]                         Get:5 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libk5crypto3 arm64 1.20.1-6ubuntu2 [85.6 kB]
+31% [5 libk5crypto3 8192 B/85.6 kB 10%]                                       34% [Waiting for headers]                         Get:6 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libkeyutils1 arm64 1.6.3-3build1 [9654 B]
+34% [6 libkeyutils1 6200 B/9654 B 64%]                                      Get:7 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libkrb5-3 arm64 1.20.1-6ubuntu2 [349 kB]
+                                      35% [7 libkrb5-3 26.0 kB/349 kB 7%]                                   44% [Waiting for headers]                         Get:8 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libgssapi-krb5-2 arm64 1.20.1-6ubuntu2 [141 kB]
+44% [8 libgssapi-krb5-2 5117 B/141 kB 4%]                                         48% [Waiting for headers]                         Get:9 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libnghttp2-14 arm64 1.59.0-1ubuntu0.1 [74.4 kB]
+48% [9 libnghttp2-14 0 B/74.4 kB 0%]                                    Get:10 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libpsl5t64 arm64 0.21.2-1.1build1 [57.4 kB]
+50% [10 libpsl5t64 6155 B/57.4 kB 11%]                                      Get:11 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 publicsuffix all 20231001.0357-0.1 [129 kB]
+53% [11 publicsuffix 12.3 kB/129 kB 10%]                                        56% [Working]             Get:12 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libbrotli1 arm64 1.1.0-2build2 [339 kB]
+56% [12 libbrotli1 1145 B/339 kB 0%]                                    65% [Working]             Get:13 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libsasl2-modules-db arm64 2.1.28+dfsg1-5ubuntu3 [21.4 kB]
+66% [13 libsasl2-modules-db 21.4 kB/21.4 kB 100%]                                                 66% [Waiting for headers]                         Get:14 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libsasl2-2 arm64 2.1.28+dfsg1-5ubuntu3 [54.7 kB]
+67% [14 libsasl2-2 24.2 kB/54.7 kB 44%]                                       69% [Waiting for headers]                         Get:15 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libldap2 arm64 2.6.7+dfsg-1~exp1ubuntu8 [193 kB]
+69% [15 libldap2 8189 B/193 kB 4%]                                  74% [Waiting for headers]                         Get:16 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 librtmp1 arm64 2.4+20151223.gitfa8646d.1-2build7 [57.8 kB]
+74% [16 librtmp1 16.4 kB/57.8 kB 28%]                                     Get:17 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libssh-4 arm64 0.10.6-2build2 [189 kB]
+                                     76% [17 libssh-4 4461 B/189 kB 2%]                                  81% [Waiting for headers]                         Get:18 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libcurl4t64 arm64 8.5.0-2ubuntu10.1 [333 kB]
+81% [18 libcurl4t64 2663 B/333 kB 1%]                                     90% [Waiting for headers]                         Get:19 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 curl arm64 8.5.0-2ubuntu10.1 [222 kB]
+90% [19 curl 17.8 kB/222 kB 8%]                               96% [Waiting for headers]                         Get:20 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libldap-common all 2.6.7+dfsg-1~exp1ubuntu8 [31.4 kB]
+96% [20 libldap-common 4469 B/31.4 kB 14%]                                          97% [Waiting for headers]                         Get:21 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libsasl2-modules arm64 2.1.28+dfsg1-5ubuntu3 [69.4 kB]
+98% [21 libsasl2-modules 2163 B/69.4 kB 3%]                                           100% [Working]              Fetched 3550 kB in 5s (776 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package openssl.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4371 files and directories currently installed.)
+Preparing to unpack .../00-openssl_3.0.13-0ubuntu3.1_arm64.deb ...
+Unpacking openssl (3.0.13-0ubuntu3.1) ...
+Selecting previously unselected package ca-certificates.
+Preparing to unpack .../01-ca-certificates_20240203_all.deb ...
+Unpacking ca-certificates (20240203) ...
+Selecting previously unselected package krb5-locales.
+Preparing to unpack .../02-krb5-locales_1.20.1-6ubuntu2_all.deb ...
+Unpacking krb5-locales (1.20.1-6ubuntu2) ...
+Selecting previously unselected package libkrb5support0:arm64.
+Preparing to unpack .../03-libkrb5support0_1.20.1-6ubuntu2_arm64.deb ...
+Unpacking libkrb5support0:arm64 (1.20.1-6ubuntu2) ...
+Selecting previously unselected package libk5crypto3:arm64.
+Preparing to unpack .../04-libk5crypto3_1.20.1-6ubuntu2_arm64.deb ...
+Unpacking libk5crypto3:arm64 (1.20.1-6ubuntu2) ...
+Selecting previously unselected package libkeyutils1:arm64.
+Preparing to unpack .../05-libkeyutils1_1.6.3-3build1_arm64.deb ...
+Unpacking libkeyutils1:arm64 (1.6.3-3build1) ...
+Selecting previously unselected package libkrb5-3:arm64.
+Preparing to unpack .../06-libkrb5-3_1.20.1-6ubuntu2_arm64.deb ...
+Unpacking libkrb5-3:arm64 (1.20.1-6ubuntu2) ...
+Selecting previously unselected package libgssapi-krb5-2:arm64.
+Preparing to unpack .../07-libgssapi-krb5-2_1.20.1-6ubuntu2_arm64.deb ...
+Unpacking libgssapi-krb5-2:arm64 (1.20.1-6ubuntu2) ...
+Selecting previously unselected package libnghttp2-14:arm64.
+Preparing to unpack .../08-libnghttp2-14_1.59.0-1ubuntu0.1_arm64.deb ...
+Unpacking libnghttp2-14:arm64 (1.59.0-1ubuntu0.1) ...
+Selecting previously unselected package libpsl5t64:arm64.
+Preparing to unpack .../09-libpsl5t64_0.21.2-1.1build1_arm64.deb ...
+Unpacking libpsl5t64:arm64 (0.21.2-1.1build1) ...
+Selecting previously unselected package publicsuffix.
+Preparing to unpack .../10-publicsuffix_20231001.0357-0.1_all.deb ...
+Unpacking publicsuffix (20231001.0357-0.1) ...
+Selecting previously unselected package libbrotli1:arm64.
+Preparing to unpack .../11-libbrotli1_1.1.0-2build2_arm64.deb ...
+Unpacking libbrotli1:arm64 (1.1.0-2build2) ...
+Selecting previously unselected package libsasl2-modules-db:arm64.
+Preparing to unpack .../12-libsasl2-modules-db_2.1.28+dfsg1-5ubuntu3_arm64.deb ...
+Unpacking libsasl2-modules-db:arm64 (2.1.28+dfsg1-5ubuntu3) ...
+Selecting previously unselected package libsasl2-2:arm64.
+Preparing to unpack .../13-libsasl2-2_2.1.28+dfsg1-5ubuntu3_arm64.deb ...
+Unpacking libsasl2-2:arm64 (2.1.28+dfsg1-5ubuntu3) ...
+Selecting previously unselected package libldap2:arm64.
+Preparing to unpack .../14-libldap2_2.6.7+dfsg-1~exp1ubuntu8_arm64.deb ...
+Unpacking libldap2:arm64 (2.6.7+dfsg-1~exp1ubuntu8) ...
+Selecting previously unselected package librtmp1:arm64.
+Preparing to unpack .../15-librtmp1_2.4+20151223.gitfa8646d.1-2build7_arm64.deb ...
+Unpacking librtmp1:arm64 (2.4+20151223.gitfa8646d.1-2build7) ...
+Selecting previously unselected package libssh-4:arm64.
+Preparing to unpack .../16-libssh-4_0.10.6-2build2_arm64.deb ...
+Unpacking libssh-4:arm64 (0.10.6-2build2) ...
+Selecting previously unselected package libcurl4t64:arm64.
+Preparing to unpack .../17-libcurl4t64_8.5.0-2ubuntu10.1_arm64.deb ...
+Unpacking libcurl4t64:arm64 (8.5.0-2ubuntu10.1) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../18-curl_8.5.0-2ubuntu10.1_arm64.deb ...
+Unpacking curl (8.5.0-2ubuntu10.1) ...
+Selecting previously unselected package libldap-common.
+Preparing to unpack .../19-libldap-common_2.6.7+dfsg-1~exp1ubuntu8_all.deb ...
+Unpacking libldap-common (2.6.7+dfsg-1~exp1ubuntu8) ...
+Selecting previously unselected package libsasl2-modules:arm64.
+Preparing to unpack .../20-libsasl2-modules_2.1.28+dfsg1-5ubuntu3_arm64.deb ...
+Unpacking libsasl2-modules:arm64 (2.1.28+dfsg1-5ubuntu3) ...
+Setting up libkeyutils1:arm64 (1.6.3-3build1) ...
+Setting up libbrotli1:arm64 (1.1.0-2build2) ...
+Setting up libsasl2-modules:arm64 (2.1.28+dfsg1-5ubuntu3) ...
+Setting up libpsl5t64:arm64 (0.21.2-1.1build1) ...
+Setting up libnghttp2-14:arm64 (1.59.0-1ubuntu0.1) ...
+Setting up krb5-locales (1.20.1-6ubuntu2) ...
+Setting up libldap-common (2.6.7+dfsg-1~exp1ubuntu8) ...
+Setting up libkrb5support0:arm64 (1.20.1-6ubuntu2) ...
+Setting up libsasl2-modules-db:arm64 (2.1.28+dfsg1-5ubuntu3) ...
+Setting up librtmp1:arm64 (2.4+20151223.gitfa8646d.1-2build7) ...
+Setting up libk5crypto3:arm64 (1.20.1-6ubuntu2) ...
+Setting up libsasl2-2:arm64 (2.1.28+dfsg1-5ubuntu3) ...
+Setting up libkrb5-3:arm64 (1.20.1-6ubuntu2) ...
+Setting up openssl (3.0.13-0ubuntu3.1) ...
+Setting up publicsuffix (20231001.0357-0.1) ...
+Setting up libldap2:arm64 (2.6.7+dfsg-1~exp1ubuntu8) ...
+Setting up ca-certificates (20240203) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/aarch64-linux-gnu/perl/5.38.2 /usr/local/share/perl/5.38.2 /usr/lib/aarch64-linux-gnu/perl5/5.38 /usr/share/perl5 /usr/lib/aarch64-linux-gnu/perl-base /usr/lib/aarch64-linux-gnu/perl/5.38 /usr/share/perl/5.38 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)
+debconf: falling back to frontend: Teletype
+Updating certificates in /etc/ssl/certs...
+146 added, 0 removed; done.
+Setting up libgssapi-krb5-2:arm64 (1.20.1-6ubuntu2) ...
+Setting up libssh-4:arm64 (0.10.6-2build2) ...
+Setting up libcurl4t64:arm64 (8.5.0-2ubuntu10.1) ...
+Setting up curl (8.5.0-2ubuntu10.1) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.2) ...
+Processing triggers for ca-certificates (20240203) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+[?2004h]0;root@5437b26075c5: /root@5437b26075c5:/# [7msh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'[27m]0;root@5437b26075c5: /root@5437b26075c5:/# sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
+[?2004lInput website:
+helsinki.fi
+Searching..
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.22.1</center>
+</body>
+</html>
+Input website:
+^C
+[?2004h]0;root@5437b26075c5: /root@5437b26075c5:/# [Kexit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                                                                                             ]2;balazskepli@Balazss-MacBook-Pro-2:~/Desktop/devops-docker]1;..devops-docker[0m[27m[24m[J[01;31m➜  [36mdevops-docker[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004heexit[?1l>[?2004l
+]2;exit]1;exit
+Script done on Tue Jul  2 18:30:34 2024
