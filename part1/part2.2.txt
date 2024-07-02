@@ -1,0 +1,89 @@
+Script started on Tue Jul  2 17:49:31 2024
+Node.js version v21.7.1 detected.
+Odd numbered Node.js versions will not enter LTS status and should not be used for production. For more information, please see https://nodejs.org/en/about/releases/.
+[1m[7m%[27m[1m[0m                                                                                                              ]2;balazskepli@Balazss-MacBook-Pro-2:~/Desktop/devops-docker]1;..devops-docker[0m[27m[24m[J[01;32m➜  [36mdevops-docker[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker ps[?1l>[?2004l
+]2;docker ps]1;dockerCONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS     NAMES
+e3ab4dfcf420   nginx     "/docker-entrypoint.…"   4 minutes ago   Up 4 minutes   80/tcp    heuristic_mayer
+[1m[7m%[27m[1m[0m                                                                                                              ]2;balazskepli@Balazss-MacBook-Pro-2:~/Desktop/devops-docker]1;..devops-docker[0m[27m[24m[J[01;32m➜  [36mdevops-docker[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker container rm [7me3ab4dfcf420[27m[12D[27me[27m3[27ma[27mb[27m4[27md[27mf[27mc[27mf[27m4[27m2[27m0[?1l>[?2004l
+]2;docker container rm e3ab4dfcf420]1;dockerError response from daemon: cannot remove container "/heuristic_mayer": container is running: stop the container before removing or force remove
+[1m[7m%[27m[1m[0m                                                                                                              ]2;balazskepli@Balazss-MacBook-Pro-2:~/Desktop/devops-docker]1;..devops-docker[0m[27m[24m[J[01;31m➜  [36mdevops-docker[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker container stop [7me3ab4dfcf420[27m[12D[27me[27m3[27ma[27mb[27m4[27md[27mf[27mc[27mf[27m4[27m2[27m0[?1l>[?2004l
+]2;docker container stop e3ab4dfcf420]1;dockere3ab4dfcf420
+[1m[7m%[27m[1m[0m                                                                                                              ]2;balazskepli@Balazss-MacBook-Pro-2:~/Desktop/devops-docker]1;..devops-docker[0m[27m[24m[J[01;32m➜  [36mdevops-docker[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker container stop e3ab4dfcf420[17Drm[P[P[13C  [?1l>[?2004l
+]2;docker container rm e3ab4dfcf420]1;dockere3ab4dfcf420
+[1m[7m%[27m[1m[0m                                                                                                              ]2;balazskepli@Balazss-MacBook-Pro-2:~/Desktop/devops-docker]1;..devops-docker[0m[27m[24m[J[01;32m➜  [36mdevops-docker[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker ps[?1l>[?2004l
+]2;docker ps]1;dockerCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[1m[7m%[27m[1m[0m                                                                                                              ]2;balazskepli@Balazss-MacBook-Pro-2:~/Desktop/devops-docker]1;..devops-docker[0m[27m[24m[J[01;32m➜  [36mdevops-docker[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker images  ls[?1l>[?2004l
+]2;docker image ls]1;dockerREPOSITORY          TAG       IMAGE ID       CREATED         SIZE
+phonebook-backend   latest    6bf11e85dc04   5 hours ago     1.12GB
+phonebook-front     latest    c3c6d678c57b   23 hours ago    49.9MB
+nginx               latest    0469e929ca63   11 days ago     193MB
+node                latest    3c0d68a38250   2 weeks ago     1.11GB
+mongo               latest    65bb8ca2cb4f   5 weeks ago     762MB
+mongo-express       latest    1133e12468c7   3 months ago    182MB
+busybox             latest    3fba0c87fcc8   13 months ago   4.04MB
+nginx               1.20.1    311a8936f841   2 years ago     126MB
+[1m[7m%[27m[1m[0m                                                                                                              ]2;balazskepli@Balazss-MacBook-Pro-2:~/Desktop/devops-docker]1;..devops-docker[0m[27m[24m[J[01;32m➜  [36mdevops-docker[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker image rm [7mnginx[27m[27mn[27mg[27mi[27mn[27mx [7mbusybox[27m[27mb[27mu[27ms[27my[27mb[27mo[27mx node[?1l>[?2004l
+]2;docker image rm nginx busybox node]1;dockerUntagged: nginx:latest
+Untagged: nginx@sha256:1aaa8180df68200fd41f9066cf62155e3b71183c04b2895a7388d5fd84ef3c8b
+Deleted: sha256:0469e929ca6320c98871e17260708787ca6e6547a0b4b21a8854e455adac73df
+Deleted: sha256:826778ece8fc089c11e3751e3560f19e42e693fcfe1056312acc5ffd97948fac
+Deleted: sha256:8ddb31b1393f1a4a32e93ddf42b98858d73c4571c86925d50ff7faac5e022a5e
+Deleted: sha256:307ef9dbe5864879da55d370eae3382300e6294b69fbba92b671ae0b4681f69f
+Deleted: sha256:9c487dd575be160b61c95a673aadf769517e43c93cdf63bf203673a95c942185
+Deleted: sha256:4d3378cbae52a446818114eeeba0cb472f38a930c5be4314b9e858911b66efc7
+Deleted: sha256:96887499c656c9bd9c697244efef40f06b3cf01a332defc39897133cc6b4a64e
+Deleted: sha256:72c690143394392f22d311d60d7b2cada541166fddd89ddf69d9564f3160e0fd
+Error response from daemon: conflict: unable to remove repository reference "busybox" (must force) - container 3cd9c73808a1 is using its referenced image 3fba0c87fcc8
+Error response from daemon: conflict: unable to remove repository reference "node" (must force) - container 95a31527ae66 is using its referenced image 3c0d68a38250
+[1m[7m%[27m[1m[0m                                                                                                              ]2;balazskepli@Balazss-MacBook-Pro-2:~/Desktop/devops-docker]1;..devops-docker[0m[27m[24m[J[01;31m➜  [36mdevops-docker[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker image ls[?1l>[?2004l
+]2;docker image ls]1;dockerREPOSITORY          TAG       IMAGE ID       CREATED         SIZE
+phonebook-backend   latest    6bf11e85dc04   5 hours ago     1.12GB
+phonebook-front     latest    c3c6d678c57b   23 hours ago    49.9MB
+node                latest    3c0d68a38250   2 weeks ago     1.11GB
+mongo               latest    65bb8ca2cb4f   5 weeks ago     762MB
+mongo-express       latest    1133e12468c7   3 months ago    182MB
+busybox             latest    3fba0c87fcc8   13 months ago   4.04MB
+nginx               1.20.1    311a8936f841   2 years ago     126MB
+[1m[7m%[27m[1m[0m                                                                                                              ]2;balazskepli@Balazss-MacBook-Pro-2:~/Desktop/devops-docker]1;..devops-docker[0m[27m[24m[J[01;32m➜  [36mdevops-docker[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker image rm [7m311a8936f841[27m[12D[27m3[27m1[27m1[27ma[27m8[27m9[27m3[27m6[27mf[27m8[27m4[27m1[?1l>[?2004l
+]2;docker image rm 311a8936f841]1;dockerUntagged: nginx:1.20.1
+Untagged: nginx@sha256:a98c2360dcfe44e9987ed09d59421bb654cb6c4abe50a92ec9c912f252461483
+Deleted: sha256:311a8936f841258f560b35e1f0f49bed9f6eae70423cc8425f1bdb568b6a99cf
+Deleted: sha256:ba18ef42b0406c6628e1fb14b9729da87f6db04338f45b458f1dbcf2f5b399a7
+Deleted: sha256:823676a7ea2f3944729f117c5fb78e0913bc26619156753a4b51da733760c25e
+Deleted: sha256:a4a62ba8149d0683a80699c4b3d4c370128fd0d00a5a9a34ef7497c3e85e237e
+Deleted: sha256:0f3aa31ecb301704d5c6f5dfd6ed1cdc4cbb9961a5b7769acfd5d300821c5596
+Deleted: sha256:5aa8853b4c305f9cd77f79c72a0a2a1826aa93bf18ec908a7bb218d3bc2f45e0
+Deleted: sha256:ec824dad94641630e9923c8786f08c83ef5acaf31b24d56df8b4e750324cc0be
+[1m[7m%[27m[1m[0m                                                                                                              ]2;balazskepli@Balazss-MacBook-Pro-2:~/Desktop/devops-docker]1;..devops-docker[0m[27m[24m[J[01;32m➜  [36mdevops-docker[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker rm  image rm [7m3c0d68a38250[27m[12D[27m3[27mc[27m0[27md[27m6[27m8[27ma[27m3[27m8[27m2[27m5[27m0[?1l>[?2004l
+]2;docker image rm 3c0d68a38250]1;dockerError response from daemon: conflict: unable to delete 3c0d68a38250 (must be forced) - image is being used by stopped container 95a31527ae66
+[1m[7m%[27m[1m[0m                                                                                                              ]2;balazskepli@Balazss-MacBook-Pro-2:~/Desktop/devops-docker]1;..devops-docker[0m[27m[24m[J[01;31m➜  [36mdevops-docker[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker container rm [7m95a31527ae66[27m[12D[27m9[27m5[27ma[27m3[27m1[27m5[27m2[27m7[27ma[27me[27m6[27m6[?1l>[?2004l
+]2;docker container rm 95a31527ae66]1;docker95a31527ae66
+[1m[7m%[27m[1m[0m                                                                                                              ]2;balazskepli@Balazss-MacBook-Pro-2:~/Desktop/devops-docker]1;..devops-docker[0m[27m[24m[J[01;32m➜  [36mdevops-docker[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker image rm 3c0d68a38250[?1l>[?2004l
+]2;docker image rm 3c0d68a38250]1;dockerUntagged: node:latest
+Untagged: node@sha256:6edfa21ba975b447c4ff57fd2aa0c50446b7bc1cef22f0df3f6b67d0bcafc11b
+Deleted: sha256:3c0d68a3825092e6d5231a9dde42bd5b54132d2fb14680e4f339dfddf1e5af4a
+[1m[7m%[27m[1m[0m                                                                                                              ]2;balazskepli@Balazss-MacBook-Pro-2:~/Desktop/devops-docker]1;..devops-docker[0m[27m[24m[J[01;32m➜  [36mdevops-docker[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker image lsç [?1l>[?2004l
+]2;docker image ls]1;dockerREPOSITORY          TAG       IMAGE ID       CREATED         SIZE
+phonebook-backend   latest    6bf11e85dc04   5 hours ago     1.12GB
+phonebook-front     latest    c3c6d678c57b   23 hours ago    49.9MB
+mongo               latest    65bb8ca2cb4f   5 weeks ago     762MB
+mongo-express       latest    1133e12468c7   3 months ago    182MB
+busybox             latest    3fba0c87fcc8   13 months ago   4.04MB
+[1m[7m%[27m[1m[0m                                                                                                              ]2;balazskepli@Balazss-MacBook-Pro-2:~/Desktop/devops-docker]1;..devops-docker[0m[27m[24m[J[01;32m➜  [36mdevops-docker[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker imae ge rm [7mbusybox[27m[27mb[27mu[27ms[27my[27mb[27mo[27mx[?1l>[?2004l
+]2;docker image rm busybox]1;dockerError response from daemon: conflict: unable to remove repository reference "busybox" (must force) - container 3cd9c73808a1 is using its referenced image 3fba0c87fcc8
+[1m[7m%[27m[1m[0m                                                                                                              ]2;balazskepli@Balazss-MacBook-Pro-2:~/Desktop/devops-docker]1;..devops-docker[0m[27m[24m[J[01;31m➜  [36mdevops-docker[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker container rm [7m3cd9c73808a1[27m[12D[27m3[27mc[27md[27m9[27mc[27m7[27m3[27m8[27m0[27m8[27ma[27m1[?1l>[?2004l
+]2;docker container rm 3cd9c73808a1]1;docker3cd9c73808a1
+[1m[7m%[27m[1m[0m                                                                                                              ]2;balazskepli@Balazss-MacBook-Pro-2:~/Desktop/devops-docker]1;..devops-docker[0m[27m[24m[J[01;32m➜  [36mdevops-docker[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker imae h ge rm busybox[?1l>[?2004l
+]2;docker image rm busybox]1;dockerUntagged: busybox:latest
+Untagged: busybox@sha256:9ae97d36d26566ff84e8893c64a6dc4fe8ca6d1144bf5b87b2b85a32def253c7
+Deleted: sha256:3fba0c87fcc8ba126bf99e4ee205b43c91ffc6b15bb052315312e71bc6296551
+Deleted: sha256:8e13bc96641a6983e79c9569873afe5800b0efb3993c3302763b9f5bc5fb8739
+[1m[7m%[27m[1m[0m                                                                                                              ]2;balazskepli@Balazss-MacBook-Pro-2:~/Desktop/devops-docker]1;..devops-docker[0m[27m[24m[J[01;32m➜  [36mdevops-docker[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker images[?1l>[?2004l
+]2;docker images]1;dockerREPOSITORY          TAG       IMAGE ID       CREATED        SIZE
+phonebook-backend   latest    6bf11e85dc04   5 hours ago    1.12GB
+phonebook-front     latest    c3c6d678c57b   23 hours ago   49.9MB
+mongo               latest    65bb8ca2cb4f   5 weeks ago    762MB
+mongo-express       latest    1133e12468c7   3 months ago   182MB
+[1m[7m%[27m[1m[0m                                                                                                              ]2;balazskepli@Balazss-MacBook-Pro-2:~/Desktop/devops-docker]1;..devops-docker[0m[27m[24m[J[01;32m➜  [36mdevops-docker[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004heexit[?1l>[?2004l
+]2;exit]1;exit
+Script done on Tue Jul  2 17:52:50 2024
